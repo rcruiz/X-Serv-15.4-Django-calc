@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound
 
 
+
 # Create your views here.
 #def say_main(request):
 #    return HttpResponse('<h1>Calculadora Django</h1>')
@@ -24,5 +25,5 @@ def divide(request, num1, div, num2):
         return HttpResponse('No se puede dividir entre 0')
 
 
-def error(request):
-    return HttpResponseNotFound('Error 404 :Recursos introducidos invalidos')
+def el404(request):
+    return HttpResponseNotFound('Error 404: Recursos introducidos inválidos.')
